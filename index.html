@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sarah Freire</title>
+<meta name="description" content="Sarah Freire: dados, inovação em saúde e estratégia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,650;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--BODY-->
+<nav class="nav" aria-label="Menu">
+  <div class="wrap">
+    <a class="brand" href="#topo">Sarah Freire</a>
+    <div class="nav-right">
+      <ul id="nav"></ul>
+      <button type="button" class="lang" id="lang"></button>
+    </div>
+  </div>
+</nav>
+
+<main id="topo">
+  <header class="wrap hero">
+    <div>
+      <h1 id="nome"></h1>
+      <p class="thesis" id="tese"></p>
+      <p class="lede" data-t="lede"></p>
+      <div class="links" id="links"></div>
+    </div>
+    <figure class="photo" id="foto"></figure>
+  </header>
+
+  <div class="wrap creds">
+    <span class="creds-label" data-t="credLabel"></span>
+    <ul id="credenciais"></ul>
+  </div>
+
+  <section class="block" id="trago">
+    <div class="wrap">
+      <div class="sec-title">
+        <p class="eyebrow" data-t="trago.eyebrow"></p>
+        <h2 data-t="trago.titulo"></h2>
+      </div>
+      <div class="strengths" id="forcas"></div>
+    </div>
+  </section>
+
+  <section class="block" id="casos">
+    <div class="wrap">
+      <div class="sec-title">
+        <p class="eyebrow" data-t="casos.eyebrow"></p>
+        <h2 data-t="casos.titulo"></h2>
+      </div>
+      <div class="cases" id="lista-casos"></div>
+      <div class="also">
+        <h3 data-t="outros.titulo"></h3>
+        <ul id="outros"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="sobre">
+    <div class="wrap about">
+      <p class="eyebrow" data-t="sobre.eyebrow"></p>
+      <div class="story" id="historia"></div>
+      <dl class="facts" id="fatos"></dl>
+    </div>
+  </section>
+
+  <section class="block" id="como-trabalho">
+    <div class="wrap">
+      <div class="sec-title">
+        <p class="eyebrow" data-t="penso.eyebrow"></p>
+        <h2 data-t="penso.titulo"></h2>
+      </div>
+      <div class="think">
+        <figure class="gp">
+          <canvas id="gp" role="img"></canvas>
+          <figcaption>
+            <span data-t="penso.legenda"></span>
+            <button type="button" id="gp-reset" data-t="penso.recomecar"></button>
+          </figcaption>
+        </figure>
+        <ul class="principles" id="principios"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pesquisa">
+    <div class="wrap ongoing">
+      <p class="eyebrow" data-t="pesquisa.eyebrow"></p>
+      <article class="ongoing-card">
+        <span class="pill" data-t="pesquisa.status"></span>
+        <h3 data-t="pesquisa.titulo"></h3>
+        <p class="where" data-t="pesquisa.onde"></p>
+        <p data-t="pesquisa.texto"></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="contato">
+    <div class="wrap contact">
+      <p class="eyebrow" data-t="contato.eyebrow"></p>
+      <div>
+        <h2 data-t="contato.titulo"></h2>
+        <p data-t="contato.texto"></p>
+        <div class="links" id="contato-links"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap" id="rodape"></div></footer>
+<!--/BODY-->
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
