@@ -72,6 +72,20 @@
       </article>`);
     list("#outros", T.outros.itens, ([t, d]) => `<li><strong>${esc(t)}</strong><span>${esc(d)}</span></li>`);
 
+    // Projetos
+    const pl = lang === "pt" ? "pt" : "en";
+    list("#lista-projetos", C.projetos, (pr) => `
+      <article class="project">
+        <div class="top"><span>${esc(pr[pl].autoria)}</span><span>${esc(pr.ano)}</span></div>
+        <h3>${esc(pr[pl].titulo)}</h3>
+        <p>${esc(pr[pl].texto)}</p>
+        <ul class="tags">${pr.tags.map((t) => `<li>${esc(Array.isArray(t) ? t[pl === "pt" ? 0 : 1] : t)}</li>`).join("")}</ul>
+        <a class="repo-link" href="https://github.com/${esc(pr.repo)}" target="_blank" rel="noopener">
+          <span>${esc(T.projetos.abrir)} →</span><code>${esc(pr.repo)}</code>
+        </a>
+      </article>`);
+    $("#todos-repos").innerHTML = ext(C.links.github, esc(T.projetos.todos) + " →", "btn");
+
     // Sobre e como trabalho
     list("#historia", T.sobre.texto, (t) => `<p>${esc(t)}</p>`);
     list("#fatos", T.sobre.fatos, ([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`);

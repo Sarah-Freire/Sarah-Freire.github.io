@@ -218,6 +218,21 @@ footer { padding-block: 28px 40px; border-top: 1px solid var(--line); font: 400 
 .steps dd.res { font-weight: 600; }
 .chart { margin: 0; }
 
+/* Projetos */
+.projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.project { display: flex; flex-direction: column; gap: 12px; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; min-width: 0; transition: border-color .15s; }
+.project:hover { border-color: var(--accent); }
+.project .top { display: flex; justify-content: space-between; gap: 10px; font: 400 0.78rem var(--mono); color: var(--muted); }
+.project h3 { font-size: var(--step-1); font-weight: 600; }
+.project p { color: var(--muted); font-size: 0.98rem; flex: 1; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; }
+.tags li { font: 400 0.74rem var(--mono); padding: 3px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--ink); }
+.repo-link { display: grid; gap: 2px; padding-top: 12px; border-top: 1px dashed var(--line); text-decoration: none; }
+.repo-link span { font: 600 var(--step--1) var(--mono); }
+.repo-link code { font: 400 0.74rem var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.repo-link:hover span { text-decoration: underline; }
+.all-repos { margin-top: 28px; }
+
 @media (max-width: 900px) {
   .hero, .case, .think { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .hero { padding-block: 40px; }
@@ -226,11 +241,11 @@ footer { padding-block: 28px 40px; border-top: 1px solid var(--line); font: 400 
   .case:nth-child(even) .case-text { order: 0; }
   .sec-title, .about, .ongoing, .contact { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .facts { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .also ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .also ul, .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   .nav ul { display: none; }
-  .also ul, .facts, .strengths { grid-template-columns: minmax(0, 1fr); }
+  .also ul, .facts, .strengths, .projects { grid-template-columns: minmax(0, 1fr); }
   .steps { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .steps dd { margin-bottom: 8px; }
   .creds li { font-size: var(--step--1); }

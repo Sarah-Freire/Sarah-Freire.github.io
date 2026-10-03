@@ -15,6 +15,46 @@ window.PORTFOLIO = {
       cv: "", // ex.: "cv-sarah-freire.pdf" (coloque o PDF na mesma pasta)
     },
     credenciais: ["MIT", "Hospital Israelita Albert Einstein", "ISARIC · Oxford", "IESE Business School", "CNPEM", "ICN2 · Barcelona"],
+    // Projetos com código aberto no GitHub (seção "Projetos"). Textos em pt e en.
+    // Etiquetas podem ser um texto único ou ["português", "inglês"].
+    projetos: [
+      {
+        repo: "alicevk/GP-comparative-analysis", ano: "2024",
+        tags: ["Python", "GPyTorch", "Pyro", "Optuna", "SHAP", "CodeCarbon"],
+        pt: { titulo: "IA para cardiopatia com pegada de carbono", texto: "Pipeline em seis etapas: análise exploratória, três implementações de Processos Gaussianos, otimização com Optuna, 16 modelos alternativos, SHAP e medição de emissões.", autoria: "Líder do projeto, com Alice V. K. Ferreira" },
+        en: { titulo: "Heart disease AI with a carbon footprint", texto: "Six-stage pipeline: exploratory analysis, three Gaussian Process implementations, Optuna tuning, 16 alternative models, SHAP and emissions tracking.", autoria: "Project lead, with Alice V. K. Ferreira" },
+      },
+      {
+        repo: "Sarah-Freire/Trabalho-RNAG", ano: "2023",
+        tags: [["Algoritmos genéticos", "Genetic algorithms"], ["Otimização", "Optimization"], "pandas"],
+        pt: { titulo: "Nutrella: dietas por algoritmo genético", texto: "Monta dietas com alimentos brasileiros, maximizando o valor nutricional dentro do limite calórico calculado pela equação de Harris-Benedict.", autoria: "Equipe de 4 pessoas" },
+        en: { titulo: "Nutrella: diets by genetic algorithm", texto: "Builds diets from Brazilian foods, maximizing nutritional value within the calorie limit given by the Harris-Benedict equation.", autoria: "Team of 4" },
+      },
+      {
+        repo: "kpsmonyque/TCC-Leite-Materno", ano: "2024",
+        tags: [["Metagenômica", "Metagenomics"], "Nextflow", "antiSMASH", ["Bioinformática", "Bioinformatics"]],
+        pt: { titulo: "Microbiota do leite humano", texto: "Pipeline de metagenômica para identificar fatores de virulência na microbiota do leite humano e relacioná-los ao contexto socioeconômico das mães. Vencedor do Prêmio Paulo Gontijo.", autoria: "Colaboradora" },
+        en: { titulo: "Human milk microbiota", texto: "Metagenomics pipeline to identify virulence factors in the human milk microbiota and relate them to mothers' socioeconomic context. Winner of the Paulo Gontijo Award.", autoria: "Collaborator" },
+      },
+      {
+        repo: "barbaraperez/Estudo-do-diabetes", ano: "2022",
+        tags: ["scikit-learn", ["Regressão", "Regression"], "Clustering", "PCA"],
+        pt: { titulo: "Diabetes na América do Sul", texto: "Regressão, PCA e clustering para estudar a prevalência de diabetes no Brasil, no Chile e na Argentina com dados do Banco Mundial e da FAO.", autoria: "Equipe de 4 pessoas" },
+        en: { titulo: "Diabetes in South America", texto: "Regression, PCA and clustering to study diabetes prevalence in Brazil, Chile and Argentina using World Bank and FAO data.", autoria: "Team of 4" },
+      },
+      {
+        repo: "Sarah-Freire/RNAG", ano: "2023",
+        tags: ["Python", ["Redes neurais", "Neural networks"], "DEAP"],
+        pt: { titulo: "Redes neurais do zero", texto: "Rede neural com grafo computacional e retropropagação implementados à mão, e experimentos com algoritmos genéticos, como o problema do caixeiro viajante.", autoria: "Individual" },
+        en: { titulo: "Neural networks from scratch", texto: "A neural network with a hand-built computational graph and backpropagation, plus genetic algorithm experiments such as the traveling salesman problem.", autoria: "Individual" },
+      },
+      {
+        repo: "viyuetuki/CineticaQuimica", ano: "2023",
+        tags: [["Simulação", "Simulation"], "Python", "Matplotlib"],
+        pt: { titulo: "Simulações de cinética química", texto: "Simulações de colisão de partículas para estudar a ordem de reação, com curvas de concentração e ajustes de primeira e segunda ordem.", autoria: "Dupla" },
+        en: { titulo: "Chemical kinetics simulations", texto: "Particle collision simulations to study reaction order, with concentration curves and first- and second-order fits.", autoria: "Pair project" },
+      },
+    ],
     // Dados reais do TCC (execuções em CPU, medidas com CodeCarbon).
     // [nome em português, nome em inglês, grupo, acurácia, gramas de CO₂eq]
     grafico: {
@@ -50,7 +90,7 @@ window.PORTFOLIO = {
     locale: "pt-BR",
     descricao: "Sarah Freire: dados, inovação em saúde e estratégia.",
     trocar: ["EN", "View in English"],
-    nav: [["#trago", "O que eu trago"], ["#casos", "Casos"], ["#sobre", "Sobre"], ["#contato", "Contato"]],
+    nav: [["#trago", "O que eu trago"], ["#casos", "Casos"], ["#projetos", "Projetos"], ["#sobre", "Sobre"], ["#contato", "Contato"]],
     tese: "Transformo dados complexos em *decisões* claras.",
     lede:
       "Cientista de dados e mestranda no Einstein com a USP. Uno rigor técnico, visão de negócio e " +
@@ -125,6 +165,13 @@ window.PORTFOLIO = {
       ],
     },
 
+    projetos: {
+      eyebrow: "Projetos",
+      titulo: "Código aberto que você pode explorar",
+      abrir: "Ver no GitHub",
+      todos: "Ver todos os repositórios no GitHub",
+    },
+
     sobre: {
       eyebrow: "Sobre",
       texto: [
@@ -188,7 +235,7 @@ window.PORTFOLIO = {
     locale: "en-US",
     descricao: "Sarah Freire: data, healthcare innovation and strategy.",
     trocar: ["PT", "Ver em português"],
-    nav: [["#trago", "What I bring"], ["#casos", "Cases"], ["#sobre", "About"], ["#contato", "Contact"]],
+    nav: [["#trago", "What I bring"], ["#casos", "Cases"], ["#projetos", "Projects"], ["#sobre", "About"], ["#contato", "Contact"]],
     tese: "I turn complex data into clear *decisions*.",
     lede:
       "Data scientist and master's student at Einstein and the University of São Paulo. I combine technical " +
@@ -261,6 +308,13 @@ window.PORTFOLIO = {
         ["Research in Barcelona", "Machine learning to detect heavy metals in water, at ICN2"],
         ["Network of 164+ members", "Created an opportunity channel for Ilum students and alumni"],
       ],
+    },
+
+    projetos: {
+      eyebrow: "Projects",
+      titulo: "Open-source work you can explore",
+      abrir: "View on GitHub",
+      todos: "See all repositories on GitHub",
     },
 
     sobre: {
