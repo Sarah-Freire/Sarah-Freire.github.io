@@ -19,7 +19,7 @@ window.PORTFOLIO = {
     // Etiquetas podem ser um texto único ou ["português", "inglês"].
     projetos: [
       {
-        repo: "alicevk/GP-comparative-analysis", ano: "2024",
+        repo: "Sarah-Freire/GP-comparative-analysis", ano: "2024",
         tags: ["Python", "GPyTorch", "Pyro", "Optuna", "SHAP", "CodeCarbon"],
         pt: { titulo: "IA para cardiopatia com pegada de carbono", texto: "Pipeline em seis etapas: análise exploratória, três implementações de Processos Gaussianos, otimização com Optuna, 16 modelos alternativos, SHAP e medição de emissões.", autoria: "Líder do projeto, com Alice V. K. Ferreira" },
         en: { titulo: "Heart disease AI with a carbon footprint", texto: "Six-stage pipeline: exploratory analysis, three Gaussian Process implementations, Optuna tuning, 16 alternative models, SHAP and emissions tracking.", autoria: "Project lead, with Alice V. K. Ferreira" },
@@ -31,13 +31,7 @@ window.PORTFOLIO = {
         en: { titulo: "Nutrella: diets by genetic algorithm", texto: "Builds diets from Brazilian foods, maximizing nutritional value within the calorie limit given by the Harris-Benedict equation.", autoria: "Team of 4" },
       },
       {
-        repo: "kpsmonyque/TCC-Leite-Materno", ano: "2024",
-        tags: [["Metagenômica", "Metagenomics"], "Nextflow", "antiSMASH", ["Bioinformática", "Bioinformatics"]],
-        pt: { titulo: "Microbiota do leite humano", texto: "Pipeline de metagenômica para identificar fatores de virulência na microbiota do leite humano e relacioná-los ao contexto socioeconômico das mães. Vencedor do Prêmio Paulo Gontijo.", autoria: "Colaboradora" },
-        en: { titulo: "Human milk microbiota", texto: "Metagenomics pipeline to identify virulence factors in the human milk microbiota and relate them to mothers' socioeconomic context. Winner of the Paulo Gontijo Award.", autoria: "Collaborator" },
-      },
-      {
-        repo: "barbaraperez/Estudo-do-diabetes", ano: "2022",
+        repo: "Sarah-Freire/Estudo-do-diabetes", ano: "2022",
         tags: ["scikit-learn", ["Regressão", "Regression"], "Clustering", "PCA"],
         pt: { titulo: "Diabetes na América do Sul", texto: "Regressão, PCA e clustering para estudar a prevalência de diabetes no Brasil, no Chile e na Argentina com dados do Banco Mundial e da FAO.", autoria: "Equipe de 4 pessoas" },
         en: { titulo: "Diabetes in South America", texto: "Regression, PCA and clustering to study diabetes prevalence in Brazil, Chile and Argentina using World Bank and FAO data.", autoria: "Team of 4" },
@@ -58,7 +52,7 @@ window.PORTFOLIO = {
     // Dados reais do TCC (execuções em CPU, medidas com CodeCarbon).
     // [nome em português, nome em inglês, grupo, acurácia, gramas de CO₂eq]
     grafico: {
-      repo: "https://github.com/alicevk/GP-comparative-analysis",
+      repo: "https://github.com/Sarah-Freire/GP-comparative-analysis",
       destaques: [3, 9], // índices dos pontos com rótulo fixo
       pontos: [
         ["Processo Gaussiano (scikit-learn)", "Gaussian Process (scikit-learn)", "gp", 0.852, 0.08469],

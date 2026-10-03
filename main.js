@@ -84,7 +84,8 @@
           <span>${esc(T.projetos.abrir)} →</span><code>${esc(pr.repo)}</code>
         </a>
       </article>`);
-    $("#todos-repos").innerHTML = ext(C.links.github, esc(T.projetos.todos) + " →", "btn");
+    $("#lista-projetos").insertAdjacentHTML("beforeend",
+      `<a class="project all-tile" href="${esc(C.links.github)}" target="_blank" rel="noopener"><strong>${esc(T.projetos.todos)} →</strong><code>github.com/Sarah-Freire</code></a>`);
 
     // Sobre e como trabalho
     list("#historia", T.sobre.texto, (t) => `<p>${esc(t)}</p>`);
