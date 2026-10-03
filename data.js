@@ -43,7 +43,7 @@ window.PORTFOLIO = {
         en: { titulo: "Neural networks from scratch", texto: "A neural network with a hand-built computational graph and backpropagation, plus genetic algorithm experiments such as the traveling salesman problem.", autoria: "Individual" },
       },
       {
-        repo: "viyuetuki/CineticaQuimica", ano: "2023",
+        repo: "Sarah-Freire/CineticaQuimica", ano: "2023",
         tags: [["Simulação", "Simulation"], "Python", "Matplotlib"],
         pt: { titulo: "Simulações de cinética química", texto: "Simulações de colisão de partículas para estudar a ordem de reação, com curvas de concentração e ajustes de primeira e segunda ordem.", autoria: "Dupla" },
         en: { titulo: "Chemical kinetics simulations", texto: "Particle collision simulations to study reaction order, with concentration curves and first- and second-order fits.", autoria: "Pair project" },
